@@ -1,14 +1,13 @@
-
 <div ng-app="">
     <div id="timm"></div>
     <blockquote>感想 :{{ping}}</blockquote>
-        <div class="weui-cell__bd">
-            <textarea class="weui-textarea" placeholder="请输入文本" rows="3" ng-model="ping"></textarea>
-            <div class="weui-textarea-counter"><span>0</span>/200</div>
-        </div>
+    <div class="weui-cell__bd">
+        <textarea class="weui-textarea" placeholder="请输入文本" rows="3" ng-model="ping"></textarea>
+        <div class="weui-textarea-counter"><span>0</span>/200</div>
+    </div>
 </div>
 <script>
-        var myDate = new Date();
-        var timn = myDate.toLocaleString();
-        document.querySelector('#timm').innerHTML = timn;
+    var myDate = new Date();
+    var timn = myDate.toLocaleString();
+    document.querySelector('#timm').innerHTML = timn;
 </script>
