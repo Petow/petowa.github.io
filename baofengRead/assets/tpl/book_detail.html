@@ -1,0 +1,12 @@
+<a href="#/" style="float:right; font-size:25px; color:black;">返回</a>
+<div class="weui_panel weui_panel_access" style="background-color:black;" >
+    <div class="weui_panel_bd" style="background-color:#fff" ng-repeat='item in bookData'>
+        <a class="weui-cell weui-cell_access" href="{{item.url}}">
+                <div class="weui-cell__bd">
+                    <p>{{item.num}}</p>
+                    <p>{{item.title}}</p>
+                </div>
+                <div class="weui-cell__ft">{{hits}}</div>
+            </a>
+    </div>
+</div>

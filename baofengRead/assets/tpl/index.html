@@ -1,0 +1,9 @@
+<h1>分类总排行榜</h1>
+<div class="weui-cells" ng-repeat='item in bookTypes'>
+    <a class="weui-cell weui-cell_access" href="#/book_detail/{{item.id}}" >
+        <div class="weui-cell__bd">
+            <p>{{item.name}}</p>
+        </div>
+        <div class="weui-cell__ft">{{item.describtion}}</div>
+    </a>
+</div>

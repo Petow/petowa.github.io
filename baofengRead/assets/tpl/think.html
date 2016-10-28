@@ -1,0 +1,29 @@
+<h2>读后感</h2>
+<div class="weui-cells">
+    <div class="weui-cell">
+        <div class="weui-cell__bd">
+            <p>{{value.tim}}</p>
+            <blockquote>{{value.ping}}</blockquote>
+        </div>
+    </div>
+</div>
+<div class="weui-cell">
+    <div class="weui-cell__bd">
+        <textarea class="weui-textarea" placeholder="请输入文本" rows="3"></textarea>
+        <div class="weui-textarea-counter"><span>0</span>/200</div>
+    </div>
+</div>
+<button class="btn">添加</button>
+<script>
+    var arr = JSON.parse(localStorage.myData);
+    var btn = document.querySelector('.btn');
+    btn.onclick = function(e) {
+        var myy = {};
+        myy.ping = document.querySelector('.weui-textarea').value.trim();
+        var myDate = new Date();
+        var timn = myDate.toLocaleString();
+        myy.tim = timn;
+        arr.push(myy);
+        localStorage.myData = JSON.stringify(arr);
+    };
+</script>
