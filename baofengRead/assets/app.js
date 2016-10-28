@@ -13,7 +13,7 @@ app.config(['$routeProvider', function($routeProvider) {
         })
         .when('/think',{
           templateUrl:'./assets/tpl/think.html',
-          controller:'thinkController'
+          controller:''
         })
         .when('/book_detail/:id', {
         templateUrl:'./assets/tpl/book_detail.html',
