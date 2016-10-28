@@ -1,13 +1,4 @@
 <div ng-app="">
-    <div id="timm"></div>
     <blockquote>感想 :{{ping}}</blockquote>
-    <div class="weui-cell__bd">
-        <textarea class="weui-textarea" placeholder="请输入文本" rows="3" ng-model="ping"></textarea>
-        <div class="weui-textarea-counter"><span>0</span>/200</div>
-    </div>
+    <p>名字 : <input type="text" ng-model="name" style="width:100%"></p>
 </div>
-<script>
-    var myDate = new Date();
-    var timn = myDate.toLocaleString();
-    document.querySelector('#timm').innerHTML = timn;
-</script>
